@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body {margin:0; padding:0;}
+
+#content {
+	background-color: #e6ffff;
+	margin:0;
+	font-family: helvetica;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* Header */
+header {
+	background-color: #b3ffff;
+	width: 100%;
+	height: 8em;
+	position: relative;
 }
+h1 {
+  margin: 0;
+  padding: 0.1em;
+  font-size: 3em;
+  color: #004d4d;
+  position: absolute;
+  width: 20%;
+  left: 1em;
+  bottom: 0px;
+}
+nav { position: absolute; left: 75%; bottom: 0; }
+
+.navBar{
+	border: 1px solid black;
+	background-color: #ffffff;
+	padding: 4px 10px;
+	display: inline-block;
+}
+.navBar:hover { background-color: #99ccff; cursor: pointer; }
+
+.selectedPage { background-color: #00cccc; }
+
+
+
+/* footer */
+footer {
+  background-color: #00cccc;
+  width: 100%;
+  margin: 0;
+}
+#credit {
+	margin: 0;
+	padding: 1em;
+	text-align: center;
+}
+
+
+/* Shared page styling */
+.sectionTitle { margin-top: 0; padding-top: 1em; text-align: center; }
+
+.subsectionContainer { text-align: center; }
+
+img { position: relative; max-width: 100vw; }
+
+
+
+/* About page */
+.aboutContent {
+	text-align: left;
+	margin: 0 15em;
+	padding: 0 0 2em 0;
+}
+
+
+
+/* Menu Page */
+.menuSection {
+	border: solid 1px black;
+	margin: 0 20em;
+}
+
+.menuItem {
+	text-align: center;
+}
+
+#coffeeSection { margin-top: 1em; }
+#sconeSection { margin-bottom: 1em; }
