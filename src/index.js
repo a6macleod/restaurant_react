@@ -1,12 +1,48 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
-// import * as serviceWorker from './serviceWorker';
+import About from './about';
+import Menu from "./menu";
+import Contact from "./contact";
+import Footer from "./footer";
+import Header from "./header"
 
-// ReactDOM.render(<App />, document.getElementById('root'));
+class Page extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      about: true,
+      menu: false,
+      contact: false,
+    };
+  }
 
-// // If you want your app to work offline and load faster, you can change
-// // unregister() to register() below. Note this comes with some pitfalls.
-// // Learn more about service workers: https://bit.ly/CRA-PWA
-// serviceWorker.unregister();
+  // handleClick(i) {
+  //   this.setState({
+  //     about: true,
+  //     menu: false,
+  //     contact: false,
+  //   });
+  // }
+
+  render() {
+      return (
+        <div className="content">
+          <Header />
+          <About />
+          <Menu />
+          <Contact />
+          <Footer />
+        </div>
+      );
+    };
+
+}
+
+// ========================================
+
+ReactDOM.render(
+  <Page />,
+  document.getElementById('root')
+);
+
