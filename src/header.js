@@ -2,24 +2,26 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className="header">
-      <h1 className="logo">
-        Treat <br /> Factory
-      </h1>
-      <nav className="navContainer">
-        <button className="aboutLink navBar selectedPage">
-          about
-        </button>
+    <div className="mainContent">
+      <header className="header">
+        <h1 className="logo">
+          Treat <br /> Factory
+        </h1>
+        <nav className="navContainer">
+          <button className="aboutLink navBar selectedPage" value="About" onClick={}>
+            about
+          </button>
 
-        <button className="menuLink navBar">
-          menu
-        </button>
+          <button className="menuLink navBar" value="Menu">
+            menu
+          </button>
 
-        <button className="contactLink navBar">
-          contact
-        </button>
-      </nav>
-    </header>
+          <button className="contactLink navBar" value="Contact">
+            contact
+          </button>
+        </nav>
+      </header>
+      </div>
   );
 };
 
